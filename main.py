@@ -1,5 +1,11 @@
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
+from tkinter import *
+canvas = Canvas(width=400, height = 300, bg='white')
+canvas.pack(expand=YES, fill=BOTH)
+
+
+mainloop()
 
 w, h = letter
 c = canvas.Canvas("Recibo-Saval.pdf", pagesize=letter)
